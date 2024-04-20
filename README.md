@@ -1,5 +1,5 @@
 # Emotion-Music-Recommendation
-Recommending music based on your facial expressions using kaggle dataset and Sporify api
+Recommending music based on your facial expressions Sporify api
 
 # Project Description:
 The emotion recognition model is trained on kaggle dataset. It can detect 7 emotions. The project works by getting live video feed from web cam, pass it through the model to get a prediction of emotion. Then according to the emotion predicted, the app will fetch playlist of songs from Spotify through spotipy wrapper and recommend the songs by displaying them on the screen.
@@ -23,9 +23,7 @@ Flask:
 - Flask
 
 # Dataset:
-The dataset used for this project is the famous FER2013 dataset. Models trained on this dataset can classify 7 emotions. The dataset can be found <a href = "https://www.kaggle.com/msambare/fer2013">here</a>.
-
-Note that the dataset is highly imbalanced with happy class having maxiumum representation. This might be a factor resulting in okaysish accuracy after training.
+Models trained on this dataset can classify 7 emotions. 
 
 # Model Architecture:
 - The model architecture is a sequential model consisting of Conv2d, Maxpool2d, Dropout and Dense layers:
